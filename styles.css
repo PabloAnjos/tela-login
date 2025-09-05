@@ -1,7 +1,15 @@
+/* CSS RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* FONT */
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* CORES */
+/* COLORS */
 
 :root {
   --green: #1e9e6a;
@@ -9,9 +17,92 @@
   --gray-10: #656769;
   --gray-20: #e8e8e8;
   --gray-30: #f1f1f1;
+  --gray-40: #f3fff2;
 }
 
-h1 {
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
   font-family: "Archivo", sans-serif;
+}
+
+.container-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3fff2;
+}
+
+.container-image img {
+  width: 500px;
+  height: 420px;
+}
+
+.container-form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1a202c;
+}
+
+.user-informations {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-form h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.container-form h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.container-form label {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.container-form input {
+  width: 400px;
+  height: 49px;
+  border-radius: 4px;
+  border-color: #656769;
+  border-style: solid;
+  background-color: #f3fff2;
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 17px;
+}
+
+.forgot-password input {
+  width: 16px;
+  height: 16px;
+}
+
+.forgot-password h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1a202c;
+}
+
+.forgot-password h4 {
+  font-weight: 500;
+  font-size: 1rem;
   color: #1e9e6a;
+}
+
+.container-checkbox {
+  display: flex;
+  gap: 10px;
 }
