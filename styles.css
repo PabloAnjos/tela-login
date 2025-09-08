@@ -172,3 +172,8 @@ form {
   color: #1e9e6a;
   text-decoration: none;
 }
+
+/* RESPONSIVIDADE */
+@media (max-width:  768px) {
+  
+}
