@@ -40,6 +40,12 @@
   height: 420px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .container-form {
   width: 50%;
   display: flex;
@@ -66,15 +72,18 @@
 .container-form label {
   font-weight: 400;
   font-size: 1.125rem;
+  margin-top: 10px;
 }
 
 .container-form input {
   width: 400px;
   height: 49px;
   border-radius: 4px;
-  border-color: #656769;
+  border-color: #E8E8E8;
   border-style: solid;
   background-color: #f3fff2;
+  margin-top: 10px;
+  padding-left: 10px;
 }
 
 .forgot-password {
@@ -104,5 +113,62 @@
 
 .container-checkbox {
   display: flex;
+  align-items: center;
   gap: 10px;
+}
+
+.container-checkbox input {
+  cursor: pointer;
+}
+
+.forgot-password a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1e9e6a;
+  text-decoration: none;
+}
+
+.container-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container-buttons button {
+  width: 400px;
+  height: 52px;
+  border-radius: 4px;
+  border-style: none;
+  padding: 16px 32px 16px 12px;
+  font-weight: 600;
+  font: bold;
+  color: #ffffff;
+  background-color: #1e9e6a;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.container-buttons #login-google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #1a202c;
+}
+
+.container-cadastro {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container-cadastro h5 {
+  font-weight: 500;
+  font: medium;
+  font-size: 1.25rem;
+}
+
+.container-cadastro a {
+  color: #1e9e6a;
+  text-decoration: none;
 }
