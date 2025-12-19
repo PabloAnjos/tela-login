@@ -177,6 +177,10 @@ form {
 
 /* PHONES */
 @media (max-width: 768px) {
+
+  html, body {
+  overflow: hidden;
+}
   .container-image {
     display: none;
   }
